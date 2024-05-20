@@ -1,7 +1,9 @@
 class Person:
     def __init__(self, name, age):
-        self.__name = name  # Private attribute
-        self.__age = age  # Private attribute
+ main-modifier-branch-01
+        self.__name = name
+        self.__age = age
+
 
     def get_name(self):
         return self.__name
@@ -16,12 +18,10 @@ class Person:
         if age > 0:
             self.__age = age
 
+            
+person = Person("Theekshana", 30)
 
-# Creating an instance of the Person class
-person = Person("Alice", 30)
-
-
-# Accessing and modifying private attributes using getter and setter methods
-print(person.get_name())  # Output: Alice
+print(person.get_name())
 person.set_age(31)
-print(person.get_age())  # Output: 31
+print(person.get_age())
+
